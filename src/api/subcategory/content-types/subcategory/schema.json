@@ -4,7 +4,8 @@
   "info": {
     "singularName": "subcategory",
     "pluralName": "subcategories",
-    "displayName": "Subcategory"
+    "displayName": "Subcategory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,18 @@
     },
     "Url": {
       "type": "string"
+    },
+    "tile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tile.tile",
+      "inversedBy": "subcategories"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "subcategory"
     }
   }
 }

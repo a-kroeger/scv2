@@ -13,6 +13,12 @@
   "attributes": {
     "Title": {
       "type": "string"
+    },
+    "subcategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subcategory.subcategory",
+      "mappedBy": "tile"
     }
   }
 }
