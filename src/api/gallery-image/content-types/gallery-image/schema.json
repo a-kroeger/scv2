@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gallery-image",
     "pluralName": "gallery-images",
-    "displayName": "GalleryImage"
+    "displayName": "GalleryImage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,16 +13,20 @@
   "pluginOptions": {},
   "attributes": {
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Link": {
+      "type": "string"
+    },
+    "Text": {
       "type": "string"
     }
   }
